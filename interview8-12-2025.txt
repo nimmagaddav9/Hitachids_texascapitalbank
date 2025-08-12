@@ -1,4 +1,30 @@
-Q1. 1st resume United Airlines, Visa, Capital Group? role?
+1. united airlines what is your role
+2. react stadalone compnents
+3. Redux vs Zustand, 
+4. can we mix redux with zustand?
+5. how the values need to pass one to other microfront end?
+6. state managment handle in microfront end
+7. what kind of tool for microfrontend?
+8. micro front architecture react?
+9. publishing npm library
+10. how did services are impacted when migrating ?
+11. how did architect .net component to react
+12. .net component equally architecture to react 
+13. .net rendering mechanism between react and .net
+14. can you give reasoning why choose to react 
+15. .net to react migrate how compnents are evaluted when migrating 
+16. best practice token stored in session 
+17. where its stored ?
+18. pkce flow 
+19. oauth flow library used ?
+20. differnce between .net architecture and react.js architecture? 
+
+
+
+
+
+
+
 
 I am a core UI Developer with 10+ years of experience building .com websites for different organizations using HTML5, CSS3, JavaScript, React.js, and Redux. 
 In the past 2 years, I worked on the React migration team, where I converted the .net pages to react on united.com. 
@@ -10,15 +36,7 @@ Worked on Security features for users where they can manage there account like F
 
 The new initiative worked on Miles-Pooling( points you get after traveling), TSA Precheck, Account security and management features, and Under18.
 
-Previously worked with Accelerator team for Visa Inc. remediation of MBDA modules like Application Management, Account Management, Portfolio Management, Analytics, Recurring billing, Virtual Terminal, etc for bank users like Wells Fargo,  Bank of America, etc
-
-Capital Group worked on DAVIS Project. Davis stands for Data visualization where we build different highcharts using react and integrate into the AEM., the backend is Java. Previously I worked on Creative Workbench, a writing tool where articles are published on capital group websites.
-
-At Cerner Corporation worked on the medical examination forms.
-
-In Office Depot worked on black Friday reporting.
-
-Satinos Technologies created a tax portal and a schoomin website for the Vignan schools.
+Previously worked with Accelerator team for Visa Inc. remediation of MBDA modules like Application Management, Account Management, Portfolio Management, Analytics, Recurring billing, Virtual Terminal, etc for bank users like Wells Fargo,  Bank of America, etc.
 
 
 Q1. Architecture designs and their use cases
