@@ -1,4 +1,14 @@
 1. united airlines what is your role
+I am a core UI Developer with 10+ years of experience building .com websites for different organizations using HTML5, CSS3, JavaScript, React.js, and Redux. 
+In the past 2 years, I worked on the React migration team, where I converted the .net pages to react on united.com. 
+Frontend is React, and used ATMOS (Own library) components used company wide.
+
+used middleware such as redux-saga to handle asynchronous tasks such as API calls, data fetching, and impure actions in a more organized and efficient way.
+
+Worked on Security features for users where they can manage there account like Forgot password, Forgot MileagePlus number, security questions, Sign-in features, Miles-Pooling, United Club pass,  Recent Activity, dashboard updates and KTN(Known Traveler Number), Accessibility guidelines features on united.com.
+
+The new initiative worked on Miles-Pooling( points you get after traveling), TSA Precheck, Account security and management features, and Under18.
+
 2. react stadalone compnents
 3. Redux vs Zustand, 
 4. can we mix redux with zustand?
@@ -19,6 +29,17 @@
 19. oauth flow library used ?
 20. differnce between .net architecture and react.js architecture? 
 
+=======================================
+
+Technical interview: ventleytech/capgemini/comcast
+
+1. current project explain?
+2. In RTL what is act ?
+3. Which testing libraries did you use?
+4. i18n? how did you implement in frontend?
+5. what is the build tool did you use for united?
+6. how did you add validation to input fields in react?
+7. Authentication mechanism did you use in united?
 
 
 
@@ -26,100 +47,4 @@
 
 
 
-I am a core UI Developer with 10+ years of experience building .com websites for different organizations using HTML5, CSS3, JavaScript, React.js, and Redux. 
-In the past 2 years, I worked on the React migration team, where I converted the .net pages to react on united.com. 
-Frontend is React, and used ATMOS (Own library) components used company wide.
 
-used middleware such as redux-saga to handle asynchronous tasks such as API calls, data fetching, and impure actions in a more organized and efficient way.
-
-Worked on Security features for users where they can manage there account like Forgot password, Forgot MileagePlus number, security questions, Sign-in features, Miles-Pooling, United Club pass,  Recent Activity, dashboard updates and KTN(Known Traveler Number), Accessibility guidelines features on united.com.
-
-The new initiative worked on Miles-Pooling( points you get after traveling), TSA Precheck, Account security and management features, and Under18.
-
-Previously worked with Accelerator team for Visa Inc. remediation of MBDA modules like Application Management, Account Management, Portfolio Management, Analytics, Recurring billing, Virtual Terminal, etc for bank users like Wells Fargo,  Bank of America, etc.
-
-
-Q1. Architecture designs and their use cases
-Question: Can you explain different UI architecture designs you’ve worked with and their use cases?
-What they’re testing: Your ability to choose the right architecture pattern for a given scenario.
-Sample Answer Approach:
-
-Mention Monolith SPA, Modular Monolith, Micro Frontends, CSR/SSR/SSG/ISR, BFF, Design Systems, PWA, Real-time UIs.
-
-Tie each to a project from your resume (e.g., United Airlines = Modular Monolith, Capital Group = Micro Frontends + SSR).
-
-Q2. SOLID principles
-Question: What are the SOLID principles, and can you give examples from your work?
-What they’re testing: Understanding of clean code and architecture.
-Sample Answer Approach:
-
-S: Single Responsibility – separate UI and data logic (Redux-Saga).
-
-O: Open/Closed – extend components via props instead of modifying them.
-
-L: Liskov Substitution – interchangeable components with same interface.
-
-I: Interface Segregation – small, focused TypeScript interfaces.
-
-D: Dependency Inversion – UI depends on abstract API services, not direct HTTP calls.
-
-Q3. Security & performance in Angular + Redux
-Question: How do you ensure security and performance in an Angular application using Redux?
-What they’re testing: Practical knowledge of app hardening and optimization.
-Sample Answer Approach:
-
-Security:
-
-Avoid innerHTML binding to prevent XSS.
-
-Use route guards & role-based access control.
-
-Store tokens in httpOnly cookies, not in Redux/localStorage.
-
-Enable CSP and sanitize all dynamic content.
-
-Performance:
-
-Use OnPush change detection to minimize re-renders.
-
-Lazy load feature modules.
-
-Use memoized selectors (reselect) with Redux.
-
-Limit global state; keep ephemeral UI state local.
-
-Q4. Types of forms
-Question: What are different types of forms you’ve implemented?
-Sample Answer Approach:
-
-Controlled Forms – State-managed inputs (React/Angular reactive forms).
-
-Uncontrolled Forms – DOM-managed inputs with refs/template variables.
-
-Dynamic Forms – Generated based on backend config or user actions.
-
-Multi-step / Wizard Forms – Step-based workflows.
-
-Accessible Forms – WCAG-compliant, ARIA-labeled, keyboard-friendly.
-
-Q5. Creating forms using React
-Question: How do you create forms in React?
-Sample Answer Approach:
-
-Controlled – Manage input values with useState and onChange.
-
-Uncontrolled – Use ref or FormData for values without re-renders.
-
-For complex forms, use libraries like Formik or React Hook Form for validation and state.
-
-Q6. Template forms in Angular
-Question: How do template-driven forms work in Angular?
-Sample Answer Approach:
-
-Defined in the HTML template with [(ngModel)] for two-way binding.
-
-Angular handles form state (ngForm directive).
-
-Simpler to set up than reactive forms but less scalable for complex validations.
-
-Good for quick forms, small apps, or when logic is minimal.
