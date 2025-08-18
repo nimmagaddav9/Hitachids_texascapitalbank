@@ -9,37 +9,93 @@ Worked on Security features for users where they can manage there account like F
 
 The new initiative worked on Miles-Pooling( points you get after traveling), TSA Precheck, Account security and management features, and Under18.
 
-2. react stadalone compnents
-3. Redux vs Zustand, 
-4. can we mix redux with zustand?
-5. how the values need to pass one to other microfront end?
-6. state managment handle in microfront end
-7. what kind of tool for microfrontend?
-8. micro front architecture react?
-9. publishing npm library
-10. how did services are impacted when migrating ?
-11. how did architect .net component to react
-12. .net component equally architecture to react 
-13. .net rendering mechanism between react and .net
-14. can you give reasoning why choose to react 
-15. .net to react migrate how compnents are evaluted when migrating 
-16. best practice token stored in session 
-17. where its stored ?
-18. pkce flow 
-19. oauth flow library used ?
-20. differnce between .net architecture and react.js architecture? 
+2. React standalone components
+Reusable, isolated pieces of UI that don’t depend on global state. Props in/out, no hidden side effects.
+
+3. Redux vs Zustand
+Redux → predictable, boilerplate heavy, great for large apps.
+Zustand → lightweight, minimal API, easier setup, simpler for smaller/mid apps.
+
+4. Can we mix Redux with Zustand?
+Yes. You can use Redux for global/shared state and Zustand for local/feature-specific state.
+
+5. Values between micro frontends
+Shared via event bus, custom DOM events, or shared storage (localStorage/sessionStorage/Context APIs exposed).
+
+6. State management in micro frontends
+Decentralized. Each microfrontend manages its own state. For shared state, use cross-frontend store (Redux, Zustand) or message bus.
+
+7. Tools for microfrontend
+Webpack Module Federation, Single-SPA, Nx, Bit, Lerna.
+
+8. Microfrontend architecture in React
+Each team builds independently deployable React apps, stitched together using Module Federation or a container shell.
+
+9. Publishing npm library
+Build reusable components → bundle with Rollup/Webpack → version and publish to npm (public or private registry).
+
+10. Service impact during migration
+Need backward compatibility. Old services must support both old (.NET) and new (React) clients until migration is complete.
+
+11. Architecting .NET component to React
+Break monolith UI into React components. Mirror business logic in APIs, keep UI logic in React.
+
+12. .NET component equivalent in React
+.NET user controls map to React components. Shared libraries map to npm packages.
+
+13. Rendering mechanism .NET vs React
+.NET (Razor/WebForms) → server-side rendering.
+React → client-side rendering (with option for SSR using Next.js).
+
+14. Why choose React?
+Component-based, fast virtual DOM, strong ecosystem, reusable, easier scaling compared to tightly coupled server-side rendering.
+
+15. Migrating .NET → React: evaluating components
+Identify reusable UI patterns, decouple business logic into APIs, convert UI to React functional components.
+
+16. Best practice for token storage
+Short-lived access token in memory, refresh token in httpOnly cookie. Avoid localStorage for security.
+
+17. Where it’s stored?
+Access token → memory (Redux/Zustand).
+Refresh token → secure httpOnly cookie.
+
+18. PKCE flow
+PKCE = Proof Key for Code Exchange. Adds code verifier + challenge to OAuth for securing SPA/public clients.
+
+19. OAuth flow library used?
+oidc-client-ts, react-oauth2-pkce, or Auth0 SDKs.
+
+20. Difference between .NET vs React architecture
+.NET → monolithic, server-rendered, tightly coupled UI + backend.
+React → client-side, component-driven, API-first, decoupled from backend.
 
 =======================================
 
 Technical interview: ventleytech/capgemini/comcast
 
 1. current project explain?
-2. In RTL what is act ?
+2. In RTL what is act?
+act() ensures all React updates (state, effects) are flushed before making assertions. It wraps test code so you don’t get warnings about async updates.
+
 3. Which testing libraries did you use?
+Jest for test runner, React Testing Library for component testing, Enzyme for legacy, Cypress/Playwright for end-to-end.
+
 4. i18n? how did you implement in frontend?
-5. what is the build tool did you use for united?
-6. how did you add validation to input fields in react?
-7. Authentication mechanism did you use in united?
+Used react-i18next. Wrapped app in I18nextProvider, created translation JSON files per locale, switched language dynamically using the hook useTranslation.
+
+5. What is the build tool you used for United?
+Webpack 5 with Module Federation for microfrontends. Also used Babel + ESLint integrated into the build.
+
+6. How did you add validation to input fields in React?
+Two approaches:
+
+Controlled components with custom validation logic.
+
+Libraries like Formik + Yup or react-hook-form for schema-based validation.
+
+7. Authentication mechanism did you use in United?
+OAuth2 with PKCE. Access token stored in memory, refresh token in secure httpOnly cookie. Used oidc-client-ts for flow handling.
 
 
 
